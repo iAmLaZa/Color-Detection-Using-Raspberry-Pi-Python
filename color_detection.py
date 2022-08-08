@@ -1,7 +1,6 @@
 import time
 import Adafruit_TCS34725
 import RPi.GPIO as GPIO
-import turtle 
 tcs = Adafruit_TCS34725.TCS34725()
 tcs.set_interrupt(False)
 GPIO.setmode(GPIO.BOARD)
