@@ -13,10 +13,8 @@ pb = GPIO.PWM(38,50)
 pr.start(20)
 pg.start(20)
 pb.start(20)
-i =0
-w=" "
-while i <10:
-    i =i+1
+
+while True:
     r, g, b, c = tcs.get_raw_data()
     if((r > b) and (r >g)):
         if(b <5):
